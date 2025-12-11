@@ -1,9 +1,12 @@
+import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
+
 function App() {
   return (
-    <div style={{ padding: "40px" }}>
-      <h1>Mi Landing Page</h1>
-      <p>Ya se ve mi diseño 😎</p>
-    </div>
+    <>
+      <NavBar />
+      <ItemListContainer greeting="¡Bienvenidos a mi tienda!" />
+    </>
   );
 }
 
