@@ -14,3 +14,19 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+# Proyecto Final React - E-commerce
+
+Aplicación web desarrollada con React simulando un e-commerce.
+
+## Tecnologías
+- React
+- React Router
+- Context API
+
+## Base de datos
+La aplicación simula la conexión a Firebase Firestore mediante promesas, replicando el comportamiento de consultas y escritura de datos en una base de datos en la nube.
+
+El proyecto se encuentra preparado para conectarse a Firestore real sin modificar la lógica de los componentes.
+

@@ -1,8 +1,17 @@
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import { Link } from "react-router-dom";
+
 const CartWidget = () => {
+const { totalQuantity } = useContext(CartContext);
+
 return (
-    <div style={{ fontSize: "22px", cursor: "pointer" }}>
+    <Link to="/cart" className="cart-widget">
     🛒
-    </div>
+    {totalQuantity() > 0 && (
+        <span className="cart-qty">{totalQuantity()}</span>
+    )}
+    </Link>
 );
 };
 

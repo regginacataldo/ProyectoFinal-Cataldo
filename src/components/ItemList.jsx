@@ -1,13 +1,13 @@
 import Item from "./Item";
 
-const ItemList = ({ items }) => {
-return (
-    <div>
-    {items.map(item => (
-        <Item key={item.id} {...item} />
-    ))}
+const ItemList = ({ products }) => {
+  return (
+    <div className="item-list">
+      {products.map(prod => (
+        <Item key={prod.id} {...prod} />
+      ))}
     </div>
-);
+  );
 };
 
 export default ItemList;
