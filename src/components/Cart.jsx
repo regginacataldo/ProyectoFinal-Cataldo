@@ -3,7 +3,8 @@ import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
-const { cart, removeItem, clearCart, totalPrice } = useContext(CartContext);
+const { cart, removeFromCart, clearAll, totalPrice } = useContext(CartContext);
+
 
 if (cart.length === 0) {
     return (
@@ -20,9 +21,9 @@ return (
 
     {cart.map(prod => (
         <div key={prod.id} className="cart-item">
-        <img src={prod.image} alt={prod.title} />
+        <img src={prod.image} alt={prod.name} />
         <div>
-            <h4>{prod.title}</h4>
+            <h4>{prod.name}</h4>
             <p>Cantidad: {prod.quantity}</p>
             <p>Subtotal: ${prod.price * prod.quantity}</p>
             <button onClick={() => removeItem(prod.id)}>Eliminar</button>
@@ -32,7 +33,8 @@ return (
 
     <h3>Total: ${totalPrice()}</h3>
 
-    <button onClick={clearCart}>Vaciar carrito</button>
+<button onClick={() => removeFromCart(prod.id)}>Eliminar</button>
+<button onClick={clearAll}>Vaciar carrito</button>
     <Link to="/checkout">Finalizar compra</Link>
     </div>
 );

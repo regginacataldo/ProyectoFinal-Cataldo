@@ -2,7 +2,8 @@ import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 
 const Checkout = () => {
-const { cart, totalPrice, clearCart } = useContext(CartContext);
+const { cart, totalPrice, clearAll } = useContext(CartContext);
+
 
 const [buyer, setBuyer] = useState({
     name: "",
@@ -32,7 +33,7 @@ const handleSubmit = (e) => {
     });
 
     alert("Compra realizada con éxito 💕");
-    clearCart();
+    clearAll();
 };
 
 return (
