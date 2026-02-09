@@ -26,7 +26,9 @@ return (
             <h4>{prod.name}</h4>
             <p>Cantidad: {prod.quantity}</p>
             <p>Subtotal: ${prod.price * prod.quantity}</p>
-            <button onClick={() => removeItem(prod.id)}>Eliminar</button>
+            <button onClick={() => removeItem(item.id)}>Eliminar
+</button>
+
         </div>
         </div>
     ))}
