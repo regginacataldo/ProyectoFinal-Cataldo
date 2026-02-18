@@ -9,12 +9,19 @@ Aplicación e-commerce desarrollada con React que utiliza Firebase Firestore par
 - Firebase
 - React Router
 - Context API
+- CSS
 
 ## Funcionalidades
 - Listado de productos desde Firestore
 - Carrito de compras
 - Eliminación de productos del carrito
-- Checkout
+- Checkout con generación de orden en Firestore
+
+## Instalación
+npm install
+
+## Ejecutar
+npm run dev
 
 ## Autor
 Reggina Cataldo

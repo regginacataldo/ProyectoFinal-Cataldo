@@ -10,8 +10,8 @@ const NavBar = () => {
 
       <div>
         <Link to="/">Perfumes</Link>
-        <Link to="/category/femeninos">Femeninos</Link>
-        <Link to="/category/masculinos">Masculinos</Link>
+        <Link to="/category/femenino">Femenino</Link>
+        <Link to="/category/masculino">Masculino</Link>
       </div>
 
       <CartWidget />
